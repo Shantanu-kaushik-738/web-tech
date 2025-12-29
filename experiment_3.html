@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Table-based Layout with Merged Cells, Alignment, and Caption</title>
+  </head>
+  <body>
+    <table border="1">
+      <caption>
+        Company Dashboard Layout (Table with Rowspan, Colspan, and Alignment)
+      </caption>
+
+      <tr>
+        <th colspan="4" align="center">Acme Corp — Q4 Overview</th>
+      </tr>
+
+      <tr>
+        <td rowspan="3" valign="top">
+          <strong>Navigation</strong>
+          <ul>
+            <li>Home</li>
+            <li>Sales</li>
+            <li>Inventory</li>
+            <li>Reports</li>
+            <li>Settings</li>
+          </ul>
+        </td>
+        <td align="center"><strong>Revenue</strong><br />$1,250,000</td>
+        <td align="center"><strong>Orders</strong><br />12,480</td>
+        <td align="center"><strong>Conversion</strong><br />3.8%</td>
+      </tr>
+
+      <tr>
+        <td align="right"><strong>Avg Order Value:</strong> $47.15</td>
+        <td align="right"><strong>Returning Customers:</strong> 32%</td>
+        <td align="right"><strong>Refund Rate:</strong> 1.4%</td>
+      </tr>
+
+      <tr>
+        <td colspan="3" align="center">
+          <strong>Sales by Week (Chart area)</strong>
+          <div>Placeholder for chart or image</div>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2" valign="top">
+          <strong>Highlights</strong>
+          <ul>
+            <li>Top category: Electronics</li>
+            <li>Best channel: Organic search</li>
+            <li>Peak day: Sunday</li>
+          </ul>
+        </td>
+        <td colspan="2" valign="top">
+          <strong>Recent Alerts</strong>
+          <ol>
+            <li>Stock low: Wireless earbuds</li>
+            <li>High cart abandonment on mobile</li>
+            <li>Shipment delays in North region</li>
+          </ol>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="4" align="center">
+          © 2025 Acme Corp • Internal Use Only • Last updated: Dec 29
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

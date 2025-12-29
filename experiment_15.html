@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DOM Manipulation Demo</title>
+  </head>
+  <body>
+    <h1 id="title">Original Title</h1>
+    <p class="info">This is some information text.</p>
+    <div id="container">
+      <p>Inside container paragraph.</p>
+    </div>
+
+    <button onclick="manipulateDOM()">Click to Manipulate</button>
+
+    <script>
+      function manipulateDOM() {
+        // Using getElementById
+        const titleElement = document.getElementById("title");
+        titleElement.innerHTML = "Updated Title using getElementById()";
+
+        // Using querySelector for class
+        const infoElement = document.querySelector(".info");
+        infoElement.innerHTML = "Updated text using querySelector()";
+
+        // Using querySelector for id and innerHTML
+        const containerElement = document.querySelector("#container");
+        containerElement.innerHTML =
+          "<p>New content added inside container using innerHTML.</p>";
+      }
+    </script>
+  </body>
+</html>

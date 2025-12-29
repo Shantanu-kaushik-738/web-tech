@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Div and Span Layout Demo</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background: #f4f4f9;
+      }
+
+      .header {
+        background: #0077b6;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .container {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px;
+      }
+
+      .box {
+        background: #e0f7fa;
+        border: 2px solid #0077b6;
+        border-radius: 8px;
+        padding: 20px;
+        width: 250px;
+        text-align: center;
+      }
+
+      .highlight {
+        color: red;
+        font-weight: bold;
+        background: yellow;
+        padding: 2px 6px;
+        border-radius: 4px;
+      }
+
+      .footer {
+        background: #023e8a;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Smart Layout with Div & Span</h1>
+      <p>
+        Using <span class="highlight">div</span> for sections and
+        <span class="highlight">span</span> for inline styling
+      </p>
+    </div>
+
+    <div class="container">
+      <div class="box">
+        <h2>Box One</h2>
+        <p>
+          This is a content block styled with
+          <span class="highlight">div</span>.
+        </p>
+      </div>
+      <div class="box">
+        <h2>Box Two</h2>
+        <p>Inline text styled using <span class="highlight">span</span>.</p>
+      </div>
+      <div class="box">
+        <h2>Box Three</h2>
+        <p>
+          Flexible layout created with
+          <span class="highlight">div</span> containers.
+        </p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>&copy; 2025 Div & Span Demo</p>
+    </div>
+  </body>
+</html>

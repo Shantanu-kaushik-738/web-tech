@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Show/Hide & Toggle Classes</title>
+    <style>
+      .hidden {
+        display: none;
+      }
+      .highlight {
+        background-color: yellow;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="title">Hello World</h1>
+    <p id="message">This is a sample paragraph.</p>
+
+    <button onclick="toggleVisibility()">Show/Hide Paragraph</button>
+    <button onclick="toggleHighlight()">Toggle Highlight</button>
+
+    <script>
+      function toggleVisibility() {
+        const msg = document.getElementById("message");
+        msg.classList.toggle("hidden"); // adds/removes the hidden class
+      }
+
+      function toggleHighlight() {
+        const title = document.getElementById("title");
+        title.classList.toggle("highlight"); // adds/removes the highlight class
+      }
+    </script>
+  </body>
+</html>

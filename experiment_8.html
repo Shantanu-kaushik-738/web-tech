@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Selectors Demo</title>
+    <style>
+      * {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      #main-title {
+        color: darkblue;
+        text-align: center;
+        margin: 20px;
+      }
+      .highlight {
+        background-color: yellow;
+        font-weight: bold;
+        padding: 5px;
+      }
+      section p {
+        color: green;
+        margin: 10px 0;
+      }
+      h2,
+      h3 {
+        color: #b22222;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="main-title">CSS Selectors Demonstration</h1>
+
+    <section>
+      <h2>Universal Selector (*)</h2>
+      <p>This text is styled by the universal selector.</p>
+    </section>
+
+    <section>
+      <h2>ID Selector (#id)</h2>
+      <p>
+        The heading above uses an <span class="highlight">ID selector</span>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Class Selector (.class)</h2>
+      <p>
+        This text has a <span class="highlight">highlight class</span> applied.
+      </p>
+    </section>
+
+    <section>
+      <h2>Descendant Selector (parent child)</h2>
+      <p>All paragraphs inside a section are styled green.</p>
+    </section>
+
+    <section>
+      <h2>Group Selector (h2, h3)</h2>
+      <h3>This subheading shares the same style as h2.</h3>
+      <p>Both h2 and h3 are styled together using a group selector.</p>
+    </section>
+  </body>
+</html>

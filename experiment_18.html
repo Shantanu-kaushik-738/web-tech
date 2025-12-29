@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DOM Manipulation</title>
+  </head>
+  <body>
+    <h1>DOM Manipulation Demo</h1>
+    <div id="container">
+      <p>Initial paragraph inside container.</p>
+    </div>
+
+    <button onclick="appendElement()">Append Element</button>
+    <button onclick="removeElement()">Remove Element</button>
+    <button onclick="modifyElement()">Modify Element</button>
+
+    <script>
+      function appendElement() {
+        const container = document.getElementById("container");
+        const newPara = document.createElement("p");
+        newPara.textContent = "This is a newly appended paragraph.";
+        container.appendChild(newPara);
+      }
+
+      function removeElement() {
+        const container = document.getElementById("container");
+        if (container.lastChild) {
+          container.removeChild(container.lastChild);
+        }
+      }
+
+      function modifyElement() {
+        const container = document.getElementById("container");
+        if (container.firstChild) {
+          container.firstChild.textContent =
+            "The first paragraph has been modified!";
+        }
+      }
+    </script>
+  </body>
+</html>

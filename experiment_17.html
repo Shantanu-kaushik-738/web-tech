@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Event Listener Demo</title>
+  </head>
+  <body>
+    <h1 id="title">Click or Press a Key</h1>
+    <button id="btn">Enable Click Event</button>
+    <button id="removeBtn">Disable Click Event</button>
+
+    <script>
+      const title = document.getElementById("title");
+      const btn = document.getElementById("btn");
+      const removeBtn = document.getElementById("removeBtn");
+
+      function changeTitle() {
+        title.innerText = "Title changed by mouse click!";
+      }
+
+      // Add mouse event listener when button is clicked
+      btn.addEventListener("click", function () {
+        title.addEventListener("click", changeTitle);
+        alert("Click event enabled on the title.");
+      });
+
+      // Remove mouse event listener
+      removeBtn.addEventListener("click", function () {
+        title.removeEventListener("click", changeTitle);
+        alert("Click event disabled on the title.");
+      });
+
+      // Keyboard event listener
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Enter") {
+          title.innerText = "Title changed by pressing Enter!";
+        }
+        if (event.key === "Escape") {
+          title.innerText = "Title reset!";
+        }
+      });
+    </script>
+  </body>
+</html>

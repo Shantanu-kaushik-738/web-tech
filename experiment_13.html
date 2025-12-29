@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Functions and Scope Demo</title>
+  </head>
+  <body>
+    <h2>Functions and Scope in JavaScript</h2>
+
+    <script>
+      function addNumbers(a, b) {
+        return a + b;
+      }
+
+      function showScope() {
+        var x = 10;
+        let y = 20;
+        const z = 30;
+        console.log("Inside function:");
+        console.log("var x =", x);
+        console.log("let y =", y);
+        console.log("const z =", z);
+      }
+
+      let result = addNumbers(5, 7);
+      console.log("Result of addNumbers:", result);
+
+      showScope();
+
+      console.log("Outside function:");
+      var outsideVar = "I am var outside";
+      let outsideLet = "I am let outside";
+      const outsideConst = "I am const outside";
+      console.log(outsideVar);
+      console.log(outsideLet);
+      console.log(outsideConst);
+    </script>
+  </body>
+</html>
