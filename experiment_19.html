@@ -11,29 +11,24 @@
       const canvas = document.getElementById("art");
       const ctx = canvas.getContext("2d");
 
-      // Background
       const bg = ctx.createLinearGradient(0, 0, 0, canvas.height);
       bg.addColorStop(0, "#e0f7fa");
       bg.addColorStop(1, "#ffffff");
       ctx.fillStyle = bg;
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-      // Rectangle
       ctx.fillStyle = "#0077b6";
       ctx.fillRect(30, 30, 140, 90);
 
-      // Outlined rectangle
       ctx.strokeStyle = "#023e8a";
       ctx.lineWidth = 4;
       ctx.strokeRect(30, 140, 140, 90);
 
-      // Circle
       ctx.beginPath();
       ctx.arc(280, 80, 50, 0, Math.PI * 2);
       ctx.fillStyle = "#ffb703";
       ctx.fill();
 
-      // Triangle
       ctx.beginPath();
       ctx.moveTo(220, 190);
       ctx.lineTo(340, 190);
@@ -42,7 +37,6 @@
       ctx.fillStyle = "#fb8500";
       ctx.fill();
 
-      // Line
       ctx.beginPath();
       ctx.moveTo(400, 40);
       ctx.lineTo(560, 140);
@@ -50,7 +44,6 @@
       ctx.lineWidth = 6;
       ctx.stroke();
 
-      // Gradient-filled circle
       const radial = ctx.createRadialGradient(470, 230, 10, 470, 230, 60);
       radial.addColorStop(0, "#90e0ef");
       radial.addColorStop(1, "#00b4d8");
@@ -59,7 +52,6 @@
       ctx.fillStyle = radial;
       ctx.fill();
 
-      // Text
       ctx.fillStyle = "#222";
       ctx.font = "20px Segoe UI";
       ctx.fillText("Canvas Shapes & Colors", 180, 350);
