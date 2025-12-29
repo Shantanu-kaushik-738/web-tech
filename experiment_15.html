@@ -15,15 +15,12 @@
 
     <script>
       function manipulateDOM() {
-        // Using getElementById
         const titleElement = document.getElementById("title");
         titleElement.innerHTML = "Updated Title using getElementById()";
 
-        // Using querySelector for class
         const infoElement = document.querySelector(".info");
         infoElement.innerHTML = "Updated text using querySelector()";
 
-        // Using querySelector for id and innerHTML
         const containerElement = document.querySelector("#container");
         containerElement.innerHTML =
           "<p>New content added inside container using innerHTML.</p>";
